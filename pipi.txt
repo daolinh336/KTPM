@@ -1,0 +1,12 @@
+11/9/2025:
+ 	# 1. (tạo nhóm docker nếu chưa có, nhóm tồn tại r vẫn ok) sudo groupadd docker 2>/dev/null || true 
+	# 2. Thêm user hiện tại vào nhóm docker sudo usermod -aG docker $USER
+	 # 3.exit
+#in docker container
+apt update
+apt upgrade -y
+apt install -y tigervnc-standalone-server
+apt install -y xterm 
+vncpasswd
+apt install -y xfce4
+vncserver :1 -geometry 1280x800 -depth 24 -xstartup /usr/bin/startxfce4 -localhost no
