@@ -1,0 +1,25 @@
+C1:
+- Docker là một nền tảng cho phép bạn đóng gói, phân phối và chạy ứng dụng trong các container, là một môi trường chạy ứng dụng tách biệt và nhẹ nhàng, chứa đầy đủ mọi thứ ứng dụng cần: mã nguồn, thư viện, runtime, hệ điều hành…
+Container chạy nhanh, nhất quán giữa các máy, tránh xung đột phần mềm và dễ triển khai
+- Docker-compose là cách để cấu hình nhiều container chạy cùng 1 lúc thông qua docker-compose.yml, liệt kê các services, nối, mapping cổng, lưu data,...
+C2:
+- Unix là hệ điều hành được phát triển vào thập niên 70 của tk 20, nó nổi bật với triết lý thiết kế: mỗi chương trình làm tốt 
+việc của mình, các chuỗi pipe nhỏ với nhau, hệ thống tập tin đơn giản mở rộng, nhưng nó là proprietary đóng lúc đầu, từ đó sinh ra nhiều nhánh khác
+- BSD (Berkeley Software Distribution): Là một phiên bản Unix được phát triển tại đại học califorinia từ bản gốc, nó mở rộng 
+và unix với nhiều tính năng hơn, vẫn giữ triết lý unix
+- Linux là kernel, được thiết kế theo chuẩn Unix nhưng ko dựa trên Unix gốc, kết hợp với GNU tools tạo thành linux distribution hoàn chỉnh
+là unix-like, tức là tuân thủ các nguyên tắc unix nhưng ko phải unix
+- *nix là các hệ điều hành giống Unix nhưng không được gọi là Unix do vấn đề bản quyền(???), điểm chung là có kernel quản lý phần cứng
+file system dạng cây, hỗ trợ multi-user và dùng cmd
+- Nhân Mach luôn là trung tâm điều phối, BSD cung cấp các tiện ích hệ thống (shell, networkin), apple thêm giao diện và ứng dụng
+thành macOS. Trong đó mach tạo ra hdh nextstep, ket hop freeBSD + gi do tạo ra darwin. Darwin + GUI + tip trick = macOS
+C3:
+- Ubuntu dựa trên Debian, một linux distribution lớn + ổn định, tuy nặng hơn tí nhưng dễ dùng, nặng hơn tí, hỗ trợ tốt và thuận tiện
+cho deploy
+- Alipine dựa trên 1 linux distribution siêu nhẹ, nhỏ gọn, bảo mật, tối ưu, không có nhiều thư viện mặc định, bảo mật cao thường dùng cho việc
+tạo ra docker image production, đây là 1 đặc biệt, dùng musl libc, dùng apk, một dự án độc lập, khác với ubuntu đi ké, tập trung vào bảo mật
+C4:
+- VNC (Virtual Network Computing), một phần mềm cho phép xem và điều khiển từ xa, nó kiểu là cây cầu xây nối giữa máy hiện tại 
+và máy cần nối, nếu máy cần nối không có desktop enviroment thì nó khoogn hiện gì. Vì bản chất là nó lấy data hình ảnh, các thứ rồi
+truyền về máy đang remote, nếu chỉ có ssh, vnc sẽ không hoạt động và truyền về màn hình đen. ssh chỉ là giao tiếp cmd, vnc lên tầm
+kiểu camera cap lại màn hình sau đó gửi về
