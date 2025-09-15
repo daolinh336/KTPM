@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  testing:
+    build: .
+    container_name: phai_chiu
+    ports:
+      - "36:22"
+      - "5901:5901"
+    restart: unless-stopped
